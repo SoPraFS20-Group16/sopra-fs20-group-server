@@ -51,11 +51,13 @@ public interface DTOMapper {
     @Mapping(source = "name", target = "name")
     @Mapping(source = "playerMinimum", target = "minPlayers")
     @Mapping(source = "players", target = "joinedPlayers")
+    @Mapping(source = "started", target = "started")
     GameLinkDTO convertGameToGameLinkDTO(Game game);
 
     @BeanMapping(ignoreByDefault = true)
     @Mapping(source = "name", target = "name")
     @Mapping(source = "withBots", target = "withBots")
+    @Mapping(source = "started", target = "started")
     Game convertGamePostDTOtoEntity(GamePostDTO gamePostDTO);
 
     @BeanMapping(ignoreByDefault = true)
@@ -64,6 +66,7 @@ public interface DTOMapper {
     @Mapping(source = "name", target = "name")
     @Mapping(source = "board", target = "board")
     @Mapping(source = "players", target = "players")
+    @Mapping(source = "started", target = "started")
     GameDTO convertGameToGameDTO(Game game);
 
     @Mapping(source = "coordinates", target = "coordinates")

@@ -22,6 +22,16 @@ public class GameLinkDTO {
 
     private boolean withBots;
 
+    private boolean started;
+
+    public boolean isStarted() {
+        return started;
+    }
+
+    public void setStarted(boolean started) {
+        this.started = started;
+    }
+
     public Long getGameId() {
         return gameId;
     }

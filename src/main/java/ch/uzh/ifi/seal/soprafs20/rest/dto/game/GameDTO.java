@@ -13,6 +13,16 @@ public class GameDTO {
     private boolean withBots;
     private BoardDTO board;
     private List<MoveDTO> moves;
+    private boolean started;
+    private Long creatorId;
+
+    public Long getCreatorId() {
+        return creatorId;
+    }
+
+    public void setCreatorId(Long creatorId) {
+        this.creatorId = creatorId;
+    }
 
     public Long getGameId() {
         return gameId;
@@ -60,5 +70,13 @@ public class GameDTO {
 
     public void setMoves(List<MoveDTO> moves) {
         this.moves = moves;
+    }
+
+    public boolean getStarted() {
+        return started;
+    }
+
+    public void setStarted(boolean started) {
+        this.started = started;
     }
 }

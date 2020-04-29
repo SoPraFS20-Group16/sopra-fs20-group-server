@@ -104,6 +104,9 @@ public class GameService {
         Board newBoard = boardService.createBoard();
         gameInput.setBoard(newBoard);
 
+        // add gate is started or not
+        gameInput.setStarted(false);
+
 
         //Save the game to give it an Id
         Game savedGame = gameRepository.saveAndFlush(gameInput);

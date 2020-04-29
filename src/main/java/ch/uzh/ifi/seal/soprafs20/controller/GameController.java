@@ -158,7 +158,8 @@ public class GameController {
         return gameDTO;
     }
 
-
+<<<<<<< Updated upstream
+=======
     @PostMapping("/games/{gameId}/start")
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
@@ -208,7 +209,7 @@ public class GameController {
      * @param gameId     unique game Id
      * @param movePutDTO the movePutDTO
      */
-
+>>>>>>> Stashed changes
     @PutMapping("/games/{gameId}")
     @ResponseStatus(HttpStatus.ACCEPTED)
     @ResponseBody
